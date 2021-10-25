@@ -14,6 +14,7 @@ public class DatabaseAccess {
     @Autowired
     protected NamedParameterJdbcTemplate jdbc;
 
+    //Get all records from the database and send it to Appointment.class as an object
     public List<Appointment> getAppointment(){
         MapSqlParameterSource namedParameter = new MapSqlParameterSource();
         String query = "SELECT * FROM appointment";
