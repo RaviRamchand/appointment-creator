@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment</title>
+</head>
+<body>
+
+<table>
+    <tr><th>ID</th><th>First Name</th><th>Email</th><th>Date</th><th>Time</th></tr>
+
+    <tr th:each="a:${aList}">
+        <td th:text="${a.id}">1</td>
+        <td th:text="${a.firstName}">Bob</td>
+        <td th:text="${a.email}">Bob@gmail.com</td>
+        <td th:text="${a.aDate}">2021-10-30</td>
+        <td th:text="${a.aTime}">3:31</td>
+    </tr>
+</table>
+
+<br><hr><br>
+
+</body>
+</html>
