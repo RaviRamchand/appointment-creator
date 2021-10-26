@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
 //Makes the class into a Controller
 @Controller
@@ -19,6 +20,14 @@ public class AppointmentController {
         //Send database records to index.html
         model.addAttribute("aList", da.getAppointment());
         //Send empty object to index.html
+        model.addAttribute("appointment", new Appointment());
+        return "index";
+    }
+
+    @PostMapping("/formAppointment")
+    public String appointment(Model model, @ModelAttribute Appointment appointment){
+        da.insertAppointment(appointment);
+        model.addAttribute("aList", da.getAppointment());
         model.addAttribute("appointment", new Appointment());
         return "index";
     }
