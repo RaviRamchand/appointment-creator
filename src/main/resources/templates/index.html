@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Appointment</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
 
+<h3>Appointments</h3>
 <table>
     <tr><th>ID</th><th>First Name</th><th>Email</th><th>Date</th><th>Time</th></tr>
 
@@ -19,13 +22,14 @@
     </tr>
 </table>
 
-<br><hr><br>
+<br><hr>
 
+<h3>Book Appointment</h3>
 <form method="post" action="#" th:action="@{/formAppointment}" th:object="${appointment}">
-    First Name: <input type="text" name="name" th:field="*{firstName}"><br><br>
-    Email: <input type="email" name="email" th:field="*{email}"><br><br>
-    Date: <input type="date" name="date" th:field="*{aDate}"><br><br>
-    Time: <input type="time" name="time" th:field="*{aTime}"><br><br>
+    First Name: <input type="text" name="name" th:field="*{firstName}">
+    Email: <input type="email" name="email" th:field="*{email}">
+    Date: <input type="date" name="date" th:field="*{aDate}">
+    Time: <input type="time" name="time" th:field="*{aTime}">
 
     <input type="submit" value="Add Appointment">
 </form>
