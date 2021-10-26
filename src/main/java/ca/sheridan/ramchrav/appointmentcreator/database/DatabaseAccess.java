@@ -20,4 +20,16 @@ public class DatabaseAccess {
         String query = "SELECT * FROM appointment";
         return jdbc.query(query, namedParameter, new BeanPropertyRowMapper<Appointment>(Appointment.class));
     }
+
+    public void insertAppointment(Appointment appointment){
+        MapSqlParameterSource namedParameter = new MapSqlParameterSource();
+        String query = "INSERT INTO appointment(firstName, email, aDate, aTime) " +
+                "VALUES(:firstName, :email, :aDate, :aTime)";
+        namedParameter.addValue("firstName", appointment.getFirstName());
+        namedParameter.addValue("email", appointment.getEmail());
+        namedParameter.addValue("aDate", appointment.getADate());
+        namedParameter.addValue("aTime", appointment.getATime());
+
+        jdbc.update(query, namedParameter);
+    }
 }
