@@ -1,6 +1,6 @@
 # appointment-creator
 
-appointment-creator is a JavaEE web application that allows a user to input appointments into an h2 database that could be viewed from the appointment table.
+appointment-creator is a JavaEE web application that uses Thymeleaf template and Lombok and Spring frameworks that allows a user to input appointments into an h2 database that could be viewed from the appointment table.
 
 ## Demonstration 
 ### Default Table
