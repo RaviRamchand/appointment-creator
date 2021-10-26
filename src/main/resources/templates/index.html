@@ -21,5 +21,14 @@
 
 <br><hr><br>
 
+<form method="post" action="#" th:action="@{/formAppointment}" th:object="${appointment}">
+    First Name: <input type="text" name="name" th:field="*{firstName}"><br><br>
+    Email: <input type="email" name="email" th:field="*{email}"><br><br>
+    Date: <input type="date" name="date" th:field="*{aDate}"><br><br>
+    Time: <input type="time" name="time" th:field="*{aTime}"><br><br>
+
+    <input type="submit" value="Add Appointment">
+</form>
+
 </body>
 </html>
