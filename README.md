@@ -6,12 +6,8 @@ appointment-creator is a JavaEE web application that allows a user to input appo
 ### Default Table
 ![default-table](https://github.com/RaviRamchand/appointment-creator/blob/master/images/1.PNG)
 
-<br />
-
 ### Entering a Record
 ![record-entry](https://github.com/RaviRamchand/appointment-creator/blob/master/images/2.PNG)
-
-<br />
 
 ### Updated Database Table
 ![updated-table](https://github.com/RaviRamchand/appointment-creator/blob/master/images/3.PNG)
