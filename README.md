@@ -14,4 +14,4 @@ Entering a Record
 <br />
 
 Updated Database Table
-![updated-table](https://github.com/RaviRamchand/appointment-creator/blob/master/images/2.PNG)
+![updated-table](https://github.com/RaviRamchand/appointment-creator/blob/master/images/3.PNG)
